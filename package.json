@@ -9,17 +9,6 @@
 
 "scripts": {
  
-   
-  "start": "react-scripts start",
- 
-   
-  "build": "react-scripts build",
- 
-   
-  "test": "react-scripts test",
- 
-   
-  "eject": "react-scripts eject",
   "install-server":"cd api && npm install",
   "start-server":"cd api && node app.js",
   "install-client":"cd client && npm install",
