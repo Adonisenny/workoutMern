@@ -16,9 +16,13 @@ import commentcommentrouter from './routes/commentcommentroutes.js'
 
  // express app
 const app = express()
+
 const upload = multer({dest:'uploads/'})
 dotenv.config()
 app.use(cors())
+app.use(cors({
+    origin:["http://localhost/3000", "https://testingrumors.onrender.com"],
+}))
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({extended:false}))
 app.use('/uploads',express.static('uploads'))
